@@ -36,3 +36,5 @@ if ! grep -E "^# >>> \[${NETRC_SECTIONNAME}\]\s*$" ${NETRC_CONFIG} >/dev/null; t
 else
     sed -i "/# >>> \[${NETRC_SECTIONNAME}\]/,/# <<< \[${NETRC_SECTIONNAME}\]/ c ${netrccfg}" ${NETRC_CONFIG}
 fi
+
+chmod 600 ${NETRC_CONFIG}

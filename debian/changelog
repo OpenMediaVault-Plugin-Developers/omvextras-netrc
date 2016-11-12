@@ -1,3 +1,9 @@
+omvextras-netrc (3.0.1) stable; urgency=low
+
+  * Set .netrc file permission
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 12 Nov 2016 17:21:03 -0600
+
 omvextras-netrc (3.0.0) stable; urgency=low
 
   * Initial release.
