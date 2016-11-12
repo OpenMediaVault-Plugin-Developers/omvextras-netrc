@@ -25,7 +25,7 @@ OMV_MKCONF_SCRIPTS_DIR=${OMV_MKCONF_SCRIPTS_DIR:-"/usr/share/openmediavault/mkco
 
 NETRC_CONFIG="/root/.netrc"
 NETRC_SECTIONNAME="omvextras"
-NETRC_EXTENSIONS_DIR="${OMV_MKCONF_SCRIPTS_DIR}/netrc.d"}
+NETRC_EXTENSIONS_DIR="${OMV_MKCONF_SCRIPTS_DIR}/netrc.d"
 
 # Execute all scripts building the custom netrc configuration.
 netrccfg=$(echo -n "# >>> [${NETRC_SECTIONNAME}]\n"; run-parts --exit-on-error ${NETRC_EXTENSIONS_DIR} | perl -p -e 's/\n/\\n/g'; echo -n "# <<< [${NETRC_SECTIONNAME}]")
