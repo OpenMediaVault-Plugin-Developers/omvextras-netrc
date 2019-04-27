@@ -1,2 +1,2 @@
 include:
-  - .{{ salt['pillar.get']('deploy_omvnetrc', 'default') }}
+  - .{{ salt['pillar.get']('deploy_netrc', 'default') }}

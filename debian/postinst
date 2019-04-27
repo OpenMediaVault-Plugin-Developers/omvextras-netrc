@@ -4,6 +4,8 @@ set -e
 
 case "$1" in
     configure)
+        touch /root/.netrc
+
         # Activate package triggers. These triggers are only set during the
         # package installation.
         dpkg-trigger update-fixperms
