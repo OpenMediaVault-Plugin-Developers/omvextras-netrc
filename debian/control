@@ -7,6 +7,6 @@ Standards-Version: 3.9.6
 
 Package: omvextras-netrc
 Architecture: all
-Depends: openmediavault (>= 3.0.52),
+Depends: openmediavault (>= 5.0),
          ${misc:Depends}
 Description: Write .netrc from multiple plugins
