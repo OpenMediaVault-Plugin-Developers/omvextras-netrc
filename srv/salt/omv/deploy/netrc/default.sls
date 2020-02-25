@@ -1,4 +1,4 @@
-{% set dirpath = '/srv/salt' | path_join(slspath) %}
+{% set dirpath = '/srv/salt' | path_join(tpldir) %}
 
 append_netrc_entries:
   file.blockreplace:
